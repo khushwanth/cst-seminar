@@ -1,10 +1,10 @@
 # Required fields for template
-name: Feature
-description: Please use this issue template for any new feature development issue, irrespective of feature size.
+name: Feature or Enhancement
+description: Please use this issue template for any new feature/enhancement development issue, irrespective of feature size.
 # about: Please use this issue template for any new feature development issue, irrespective of feature size.
 
 # Optional fields for template
-title: "[FEAT-XYZ] FEATURE TITLE HERE (Replace XYZ with your feature code)"
+title: "FEATURE_CODE_HERE FEATURE_TITLE_HERE"
 labels: [feature]
 assignees: []
 projects: []
@@ -16,18 +16,46 @@ body:
     value: |
       #### Instruction
 
-      Please fill in the below fields to raise an issue/card for a feature. 
+      Please fill in the below fields to raise an issue/card for a feature/enhancement.
+      You can detail the feature in Description if 
+- type: input
+  id: story-link
+  attributes:
+    label: Link to Story
+    description: Add the link to the Github Wiki link for epic/story or any other document where this feature is detailed.
+    placeholder: Optional, but preferred
+  validations:
+    required: false
+- type: input
+  id: design-link
+  attributes:
+    label: Link to Design
+    description: Add the link to Figma/draw.io/related documents that visualizes the feature
+    placeholder: Optional
+  validations:
+    required: false
 - type: textarea
-  id: test
-  attributes: 
-    label: Reproduction Steps
-    description: "This is a test"
-    value: |
-      ```[tasklist]
-      ### Steps to Reproduce
-      - [ ] Item 1 
-      ``` 
-    render: markdown
+  id: description
+  attributes:
+    label: Brief Desciption
+    description: |
+      Add a description of the feature. Any additional information/links can be added here.
+      You can also add solution brief or preferred/discussed approaches here.
   validations:
     required: true
-  
+- type: textarea
+  id: task-breakdown
+  attributes:
+    label: Task Breakdown
+    description: Add task breakdown here (if any) especially for bigger features/enhancements or task divisions across team for sub-issues.
+    value: |
+      ```[tasklist]
+      ### Tasks
+      - [ ] Example Task 1
+      - [ ] Example Task 2
+      ``` 
+- type: textarea
+  id: additional-notes
+  attributes:
+    label: Additional Note(s)
+    description: Add any additional notes/screenshots/caution messages here (Optional)
