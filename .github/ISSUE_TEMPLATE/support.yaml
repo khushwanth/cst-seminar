@@ -1,1 +1,42 @@
+# Required fields for template
+name: Request Support
+description: Please use this issue template to request a support (eg. Data Export, Check Logs, etc) that does not fit as feature or bug
+# about: Please use this issue template to request for support (eg. Data Export, Check Logs, etc) that does not fit as feature or bug
 
+# Optional fields for template
+title: "[SUPPORT] YOUR_TITLE_HERE"
+labels: ["help wanted"]
+assignees: []
+projects: []
+
+# Optional Body Field (Do not change the structure before discussing with Heads/Managers)
+body:
+- type: markdown
+  attributes:
+    value: |
+      #### Instruction
+
+      - Please fill in the below fields to request for support that does not qualify as feature/bug
+      - You may use this template to ask the development team for ad-hoc support such as inspecting logs, data exports, etc
+      - You can detail the feature in the description. You can use the Markdown Editor fields as you prefer.
+      - Please edit the labels and assignees
+- type: dropdown
+  id: server-selection
+  attributes:
+    label: Select Server (if applicable)
+    description: Select a Environment/Server if applicable
+    options:
+      - Select One
+      - Production
+      - Stage/Preprod
+      - Dev Server
+  validations:
+    required: false
+- type: textarea
+  id: support-description
+  attributes:
+    label: Support Description
+    description: Add the detailed support need
+    placeholder: Describe the support required here
+  validations:
+    required: true
