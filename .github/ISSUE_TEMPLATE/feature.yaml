@@ -38,7 +38,7 @@ body:
 - type: textarea
   id: description
   attributes:
-    label: Brief Description
+    label: Description
     description: |
       Add a description of the feature. You may add any additional information, screenshots, or links here.
       You can also add a solution brief or preferred/discussed approaches here.
