@@ -16,6 +16,7 @@ body:
     value: |
       #### Instruction
 
+      - Write the name of the Environment (DEV/STAGE/PRODUCTION) in the [ENV] tag in the title
       - Please fill in the below fields to raise an issue/card for a bug.
       - You can detail the bug in the description. You can use the Markdown Editor fields as you prefer.
       - Please edit the labels and assignees
@@ -29,7 +30,7 @@ body:
       - Dev Server 2
       - Staging/Pre-Prod
       - Production
-      - All
+      - All (affects all/most servers)
   validations:
     required: true
 - type: input
@@ -44,34 +45,42 @@ body:
   id: bug-team
   attributes:
     label: Application Scope
-    description: Select where the bug is present
+    description: Select where the bug is present (eg. Frontent, Backend)
     options:
       - Mobile App
       - Frontend (Web)
       - Backend
       - Unsure
-- type: textarea
-  id: description
-  attributes:
-    label: Brief Description
-    description: |
-      Add a description of the feature. You may add any additional information, screenshots, or links here.
-      You can also add a solution brief or preferred/discussed approaches here.
   validations:
     required: true
 - type: textarea
-  id: task-breakdown
+  id: description
   attributes:
-    label: Task Breakdown
-    description: Add task breakdown here (if any), especially for bigger features/enhancements or task divisions across team for sub-issues.
+    label: Describe the Bug
+    description: |
+      Add a detailed description of the bug. You may add any additional information, screenshots, screen recordings, or links here.
+  validations:
+    required: true
+- type: textarea
+  id: repro-steps
+  attributes:
+    label: Steps to reproduce the bug
+    description: Add concise steps to reproduce the bug. You may use the bullet-point syntax below, or use your preferred style.
     value: |
-      ```[tasklist]
-      ### Tasks
-      - [ ] Example Task 1
-      - [ ] Example Task 2
-      ``` 
+      - Example Step 1
+      - Example Step 2
+- type: checkboxes
+  id: raised-by
+  attributes:
+    label: Reported By
+    description: Who reported the bug?
+    options:
+      - label: Internal (IAT) - by PAA
+      - label: Internal (IAT) - by BA/Developer
+      - label: UAT - by Client
+      - label: Bug Tracker (Rollbar/Sentry)
 - type: textarea
   id: additional-notes
   attributes:
-    label: Additional Note(s)
-    description: (Optional) Add any additional notes/screenshots/caution messages here.
+    label: Additional Screenshots/Notes
+    description: (Optional) Add any additional notes/screenshots/caution messages here. You could also provide your opinion/theories on why the bug may have occurred, eg. maybe due to a recent change
