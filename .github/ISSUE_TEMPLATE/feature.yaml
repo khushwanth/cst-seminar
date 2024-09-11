@@ -17,11 +17,18 @@ body:
       #### Instruction
 
       Please fill in the below fields to raise an issue/card for a feature. 
-- type: input
+- type: textarea
+  id: test
   attributes: 
-    label: "Test"
+    label: Reproduction Steps
     description: "This is a test"
-    placeholder: "Add your input here"
+    value: |
+      Please Add the steps to reproduce below
+    render: |
+      ```[tasklist]
+        ### Steps to Reprocude
+        - [ ] 
+      ``` 
   validations:
     required: true
   
