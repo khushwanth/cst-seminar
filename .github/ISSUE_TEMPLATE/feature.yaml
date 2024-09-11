@@ -22,8 +22,6 @@ body:
   attributes: 
     label: Reproduction Steps
     description: "This is a test"
-    value: |
-      Please Add the steps to reproduce below
     render: |
       ```[tasklist]
         ### Steps to Reprocude
