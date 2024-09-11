@@ -37,7 +37,7 @@ body:
   id: additional-bug-env
   attributes:
     label: Server Detail
-    description: Add the link/details of the server/environment if it is not listed above, example: dev-server-4
+    description: "Add the link/details of the server/environment if it is not listed above, example: dev-server-4"
     placeholder: Optional (You may add the Server URL here for ease)
   validations:
     required: false
