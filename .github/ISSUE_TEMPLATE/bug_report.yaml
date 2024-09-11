@@ -1,1 +1,77 @@
+# Required fields for template
+name: Bug Report
+description: Please use this issue template to raise bugs
+# about: Please use this issue template to raise bugs
 
+# Optional fields for template
+title: "[ENV] [FEATURE_CODE] [FEATURE_TITLE]"
+labels: [bug]
+assignees: []
+projects: []
+
+# Optional Body Field (Do not change the structure before discussing with Heads/Managers)
+body:
+- type: markdown
+  attributes:
+    value: |
+      #### Instruction
+
+      - Please fill in the below fields to raise an issue/card for a bug.
+      - You can detail the bug in the description. You can use the Markdown Editor fields as you prefer.
+      - Please edit the labels and assignees
+- type: dropdown
+  id: bug-environment
+  attributes:
+    label: Environment or Server
+    description: Please select the server where the bug was found. Select All if this is a bug affecting all servers.
+    options:
+      - Dev Server 1
+      - Dev Server 2
+      - Staging/Pre-Prod
+      - Production
+      - All
+  validations:
+    required: true
+- type: input
+  id: additional-bug-env
+  attributes:
+    label: Server Detail
+    description: Add the link/details of the server/environment if it is not listed above 
+    placeholder: Optional
+  validations:
+    required: false
+- type: dropdown
+  id: bug-team
+  attributes:
+    label: Application Scope
+    description: Select where the bug is present
+    options:
+      - Mobile App
+      - Frontend (Web)
+      - Backend
+      - Unsure
+- type: textarea
+  id: description
+  attributes:
+    label: Brief Description
+    description: |
+      Add a description of the feature. You may add any additional information, screenshots, or links here.
+      You can also add a solution brief or preferred/discussed approaches here.
+  validations:
+    required: true
+- type: textarea
+  id: task-breakdown
+  attributes:
+    label: Task Breakdown
+    description: Add task breakdown here (if any), especially for bigger features/enhancements or task divisions across team for sub-issues.
+    value: |
+      ```[tasklist]
+      ### Tasks
+      - [ ] Example Task 1
+      - [ ] Example Task 2
+      ``` 
+- type: textarea
+  id: additional-notes
+  attributes:
+    label: Additional Note(s)
+    description: (Optional) Add any additional notes/screenshots/caution messages here.
