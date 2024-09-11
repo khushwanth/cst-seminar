@@ -1,7 +1,7 @@
 # Required fields for template
 name: Feature
 description: Please use this issue template for any new feature development issue, irrespective of feature size.
-about: Please use this issue template for any new feature development issue, irrespective of feature size.
+# about: Please use this issue template for any new feature development issue, irrespective of feature size.
 
 # Optional fields for template
 title: "[FEAT-XYZ] FEATURE TITLE HERE (Replace XYZ with your feature code)"
