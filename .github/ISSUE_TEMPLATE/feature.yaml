@@ -27,6 +27,7 @@ body:
       ### Steps to Reproduce
       - [ ] Item 1 
       ``` 
+    render: markdown
   validations:
     required: true
   
