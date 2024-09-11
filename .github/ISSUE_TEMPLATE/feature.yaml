@@ -4,7 +4,7 @@ description: Please use this issue template for any new feature/enhancement deve
 # about: Please use this issue template for any new feature development issue, irrespective of feature size.
 
 # Optional fields for template
-title: "FEATURE_CODE_HERE FEATURE_TITLE_HERE"
+title: "[FEATURE_CODE_HERE] FEATURE_TITLE_HERE"
 labels: [feature]
 assignees: []
 projects: []
@@ -16,8 +16,9 @@ body:
     value: |
       #### Instruction
 
-      Please fill in the below fields to raise an issue/card for a feature/enhancement.
-      You can detail the feature in the description. You can use the Markdown Editor fields as you prefer.
+      - Please fill in the below fields to raise an issue/card for a feature/enhancement.
+      - You can detail the feature in the description. You can use the Markdown Editor fields as you prefer.
+      - Please edit the labels and assignees
 - type: input
   id: story-link
   attributes:
