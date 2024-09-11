@@ -56,27 +56,36 @@ body:
 - type: textarea
   id: description
   attributes:
-    label: Describe the Bug
+    label: Bug Description
     description: |
       Add a detailed description of the bug. You may add any additional information, screenshots, screen recordings, or links here.
-    value: |
-      ### Detail
-
-      Describe the Bug here
-
-      ### Expected behavior
-
-      Write the expected Behavior here
-
-      ### Link to Story (Optional)
-
-      Add the link to the story here (if present)
-
-      ### Link to Design
-
-      Add the Figma/Design link here of the expected result here (if present)
+    placeholder: Type the bug detail here
   validations:
     required: true
+- type: textarea
+  id: expected-behavior
+  attributes:
+    label: Expected Behavior
+    description: Expected result of the correct flow
+    placeholder: Describe the Expected Flow
+  validations:
+    required: true
+- type: input
+  id: story-link
+  attributes:
+    label: Link to Story
+    description: Add the link to story/wiki where this feature is detailed
+    placeholder: Optional
+  validations:
+    required: false
+- type: input
+  id: design-link
+  attributes:
+    label: Link to Design
+    description: Add the link to Figma/other design file of the correct flow
+    placeholder: Optional
+  validations:
+    required: false
 - type: textarea
   id: repro-steps
   attributes:
@@ -91,7 +100,7 @@ body:
   id: raised-by
   attributes:
     label: Reported By
-    description: Who reported the bug?
+    description: Who is reporting the bug?
     options:
       - label: Internal (IAT) - by PAA
       - label: Internal (IAT) - by BA/Developer
