@@ -59,6 +59,22 @@ body:
     label: Describe the Bug
     description: |
       Add a detailed description of the bug. You may add any additional information, screenshots, screen recordings, or links here.
+    value: |
+      ### Detail
+
+      Describe the Bug here
+
+      ### Expected behavior
+
+      Write the expected Behavior here
+
+      ### Link to Story (Optional)
+
+      Add the link to the story here (if present)
+
+      ### Link to Design
+
+      Add the Figma/Design link here of the expected result here (if present)
   validations:
     required: true
 - type: textarea
@@ -69,6 +85,8 @@ body:
     value: |
       - Example Step 1
       - Example Step 2
+  validations:
+    required: true
 - type: checkboxes
   id: raised-by
   attributes:
@@ -79,6 +97,8 @@ body:
       - label: Internal (IAT) - by BA/Developer
       - label: UAT - by Client
       - label: Bug Tracker (Rollbar/Sentry)
+  validations:
+    required: true
 - type: textarea
   id: additional-notes
   attributes:
