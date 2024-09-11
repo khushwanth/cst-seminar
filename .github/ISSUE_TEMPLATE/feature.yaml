@@ -22,11 +22,11 @@ body:
   attributes: 
     label: Reproduction Steps
     description: "This is a test"
-    # render: |
-      # ```[tasklist]
-        ### Steps to Reprocude
-        # - [ ] 
-      # ``` 
+    value: |
+      ```[tasklist]
+      ### Steps to Reproduce
+      - [ ] Item 1 
+      ``` 
   validations:
     required: true
   
