@@ -26,6 +26,7 @@ body:
     label: Environment or Server
     description: Please select the server where the bug was found. Select All if this is a bug affecting all servers.
     options:
+      - **Select One**
       - Dev Server 1
       - Dev Server 2
       - Staging/Pre-Prod
@@ -37,8 +38,8 @@ body:
   id: additional-bug-env
   attributes:
     label: Server Detail
-    description: Add the link/details of the server/environment if it is not listed above 
-    placeholder: Optional
+    description: Add the link/details of the server/environment if it is not listed above, example: dev-server-4
+    placeholder: Optional (You may add the Server URL here for ease)
   validations:
     required: false
 - type: dropdown
@@ -47,6 +48,7 @@ body:
     label: Application Scope
     description: Select where the bug is present (eg. Frontent, Backend)
     options:
+      - **Select One**
       - Mobile App
       - Frontend (Web)
       - Backend
