@@ -17,7 +17,7 @@ body:
       #### Instruction
 
       Please fill in the below fields to raise an issue/card for a feature/enhancement.
-      You can detail the feature in Description if 
+      You can detail the feature in the description. You can use the Markdown Editor fields as you prefer.
 - type: input
   id: story-link
   attributes:
@@ -30,24 +30,24 @@ body:
   id: design-link
   attributes:
     label: Link to Design
-    description: Add the link to Figma/draw.io/related documents that visualizes the feature
+    description: Add the link to Figma/draw.io/related documents that visualize the feature.
     placeholder: Optional
   validations:
     required: false
 - type: textarea
   id: description
   attributes:
-    label: Brief Desciption
+    label: Brief Description
     description: |
-      Add a description of the feature. Any additional information/links can be added here.
-      You can also add solution brief or preferred/discussed approaches here.
+      Add a description of the feature. You may add any additional information, screenshots, or links here.
+      You can also add a solution brief or preferred/discussed approaches here.
   validations:
     required: true
 - type: textarea
   id: task-breakdown
   attributes:
     label: Task Breakdown
-    description: Add task breakdown here (if any) especially for bigger features/enhancements or task divisions across team for sub-issues.
+    description: Add task breakdown here (if any), especially for bigger features/enhancements or task divisions across team for sub-issues.
     value: |
       ```[tasklist]
       ### Tasks
@@ -58,4 +58,4 @@ body:
   id: additional-notes
   attributes:
     label: Additional Note(s)
-    description: Add any additional notes/screenshots/caution messages here (Optional)
+    description: (Optional) Add any additional notes/screenshots/caution messages here.
