@@ -17,4 +17,11 @@ body:
       #### Instruction
 
       Please fill in the below fields to raise an issue/card for a feature. 
+- type: input
+  attributes: 
+    label: "Test"
+    description: "This is a test"
+    placeholder: "Add your input here"
+  validations:
+    required: true
   
