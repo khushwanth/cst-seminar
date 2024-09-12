@@ -113,3 +113,4 @@ body:
   attributes:
     label: Additional Screenshots/Notes
     description: (Optional) Add any additional notes/screenshots/caution messages here. You could also provide your opinion/theories on why the bug may have occurred, eg. maybe due to a recent change
+    placeholder: "Example: Rollbar/Sentry URL"
